@@ -1,0 +1,37 @@
+@font-face {
+    font-family:'poppins';
+    src: url(/fonts/sans/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family:'fantasque';
+    src: url(/fonts/monospace/fantasque/FantasqueSansMono-Regular.ttf);
+}
+:root{
+    /*------typography------*/
+    --primary-font: 'poppins';
+    --monospace: 'fantasque';
+    --border-radius: 0.4em;
+    /*-colors-*/
+    --primary-color: #188fff;
+    --bg-color: #3a3a3a;
+    --surface-color: gray;
+    --text-color: #fff;
+    --light-color: #fff;
+    --dark-color: #000;
+
+    --neutral-color: #808080;
+    --red-color: red;
+    --orange: orange;
+    --yellow-color: yellow;
+    --green-color: green;
+    --violet-color: violet;
+    --blue-color: blue;
+    --sky-colo: skyblue;
+    --pink-color: pink;
+    /*-spacing-*/
+
+}
+
+
+
+
