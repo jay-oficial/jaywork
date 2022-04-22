@@ -5,7 +5,7 @@
 }
 /*-------Reset-------*/
 *{
-    font-family:'poppins', Arial, Helvetica, sans-serif;
+    font-family:'poppins', monospace;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
