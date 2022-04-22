@@ -1,7 +1,7 @@
 @import url('variables.css');
 @font-face {
     font-family:'poppins';
-    src: url(/fonts/sans/poppins/Poppins-Regular.ttf);
+    src: url('fonts/sans/poppins/Poppins-Regular.ttf');
 }
 /*-------Reset-------*/
 *{
