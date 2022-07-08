@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    background-color: #1d1d1d;
+    padding: 8px 12px;
+    color: #fff;
+}
+aside {
+    background-color: #dbdbdb;
+    padding: 12px;
+    min-width: max-content;
+    border-right: 1px solid #c0c0c0;
+}
+main {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+#root {
+    width: 100%;
+    padding: 12px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+[class*="flex"]{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.gap{
+    gap: 12px;
+}
+.colors{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+.color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 12px;
+}
+.border{
+    border: 1px solid #acacac;
+}
+.rounded{
+    border-radius: 0.4em;
+    height: 24px;
+}

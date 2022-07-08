@@ -1,0 +1,40 @@
+$flex:(
+    'flex':(
+        'column':'flex-direction',
+        'column-reverse':'flex-direction',
+        'row':'flex-direction',
+        'row-reverse':'flex-direction',
+        'wrap':'flex-wrap',
+        'nowrap':'flex-wrap',
+    ),
+    'justify':(
+        'baseline':'justify-content',
+        'center':'justify-content',
+        'stretch':'justify-content',
+        'flex-end':'justify-content',
+        'flex-start':'justify-content',
+        'left':'justify-content',
+        'right':'justify-content',
+        'space-around':'justify-content',
+        'space-evenly':'justify-content',
+        'space-between':'justify-content',
+    ),
+    'align':(
+        'baseline':'align-items',
+        'center':'align-items',
+        'flex-end':'align-items',
+        'flex-start':'align-items',
+        'stretch':'align-items',
+    )
+);
+
+@each $propertie,$values in $flex {
+    @each $value,$valueProp in $values {
+        .#{$propertie}-#{$value}{
+            #{$valueProp}: #{$value};
+        }
+        @debug $valueProp;
+    }
+    
+}
+

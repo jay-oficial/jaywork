@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+$counter: 1;
+$colorShades: 9;
+$columns: 12;
+
+:root{
+    --primary-font: 'poppins',Arial, Helvetica, sans-serif;
+    --primary-color: #4704ff;
+    --secondary-color: #141414;
+    --text-color: #1d1d1d;
+    --background-color: #ececec;
+    --surface-color: #dddddd;
+}
+$breakpoints: (
+    'sm': 640px,
+    'md': 720px,
+    'lg': 1024px,
+    'xl': 1200px,
+    );
+$colors: (
+    'gray':gray,
+    'neutral':  #9dadbf,
+    'purple':#6245ad,
+    'indigo':#5456cc,
+    'blue':#1c75f0,
+    'sky':#5dd1ff,
+    'cyan':#28fdfd,
+    'green':#6bd790,
+    'emerald':#10B981,
+    'red':#ce062d,
+    'pink':#f372b2,
+    'yellow':#ebe729,
+    'orange':#ffa500,
+);
+$uiColors:(
+    'primary': #4704ff,
+    'secondary':#141414,
+    'background':#ececec,
+    'surface':#dddddd,
+    'dark':#1d1d1d,
+    'light':#f1f1f1,
+    'transparent': transparent,
+);

@@ -1,0 +1,14 @@
+@use '../base/breakpoints' as *;
+@use '../base/variables' as *;
+$size-base: 5;
+
+@for $size from 1 through 20{
+    .w-#{$size*$size-base}{
+        $size-base: 5%;
+        width: $size * $size-base;
+    }
+}
+
+
+
+

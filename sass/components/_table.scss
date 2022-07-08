@@ -1,0 +1,25 @@
+table{
+    background-color: #dbdada; 
+    border-radius: 0.4em;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-collapse: collapse;
+}
+tbody{
+    overflow: scroll;
+    min-width: max-content;
+}
+th{
+    background-color: #1d1d1d;
+    color: #fff;
+}
+td,th{
+    padding: 8px 12px;
+    text-align: start;
+}
+tr>td:first-child,th:first-child{
+    position: sticky;
+    left: 0;
+}
+

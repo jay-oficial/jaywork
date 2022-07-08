@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+body{
+    margin: 0;
+    color: var(--tetx-color);
+    background-color: var(--background-color);
+    line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    min-width: max-content;
+}
+button{
+    border: none;
+}

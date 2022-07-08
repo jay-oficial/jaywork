@@ -1,0 +1,45 @@
+@use '../base/variables' as *;
+@use '../base/breakpoints' as *;
+
+[class*="grid"]{
+    display: grid;
+}
+
+@while $counter <= $columns{
+    .grid-#{$counter}{
+        grid-template-columns: repeat($counter,1fr);
+    }
+    $counter: $counter + 1;
+}
+@include sm{
+    @while $counter <= $columns{
+        .sm-grid-#{$counter}{
+            grid-template-columns: repeat($counter,1fr);
+        }
+        $counter: $counter + 1;
+    }
+}
+@include md{
+    @while $counter <= $columns{
+        .md-grid-#{$counter}{
+            grid-template-columns: repeat($counter,1fr);
+        }
+        $counter: $counter + 1;
+    }
+}
+@include lg{
+    @while $counter <= $columns{
+        .lg-grid-#{$counter}{
+            grid-template-columns: repeat($counter,1fr);
+        }
+        $counter: $counter + 1;
+    }
+}
+@include xl{
+    @while $counter <= $columns{
+        .xl-grid-#{$counter}{
+            grid-template-columns: repeat($counter,1fr);
+        }
+        $counter: $counter + 1;
+    }
+}

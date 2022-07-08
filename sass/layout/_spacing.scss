@@ -1,0 +1,60 @@
+@use '../base/variables' as *;
+@use '../base/breakpoints' as *;
+
+$spacingProperties:(
+    'p':padding,
+    'm':margin,
+    'gap':gap,
+);
+$spacings:(
+    'xs': 4px,
+    'sm': 8px,
+    'md': 12px,
+    'lg': 24px,
+    'xl': 48px,
+);
+@each $propertieName,$propertie in $spacingProperties {
+    @each $spacingName,$spacing in $spacings {
+                .#{$propertieName}-#{$spacingName}{
+                    #{$propertie}: $spacing;
+                }
+    }
+}
+@include sm{
+    @each $propertieName,$propertie in $spacingProperties {
+        @each $spacingName,$spacing in $spacings {
+                    .sm-#{$propertieName}-#{$spacingName}{
+                        #{$propertie}: $spacing;
+                    }
+        }
+    }
+}
+@include md{
+    @each $propertieName,$propertie in $spacingProperties {
+        @each $spacingName,$spacing in $spacings {
+                    .md-#{$propertieName}-#{$spacingName}{
+                        #{$propertie}: $spacing;
+                    }
+        }
+    }
+}
+@include lg{
+    @each $propertieName,$propertie in $spacingProperties {
+        @each $spacingName,$spacing in $spacings {
+                    .lg-#{$propertieName}-#{$spacingName}{
+                        #{$propertie}: $spacing;
+                    }
+        }
+    }
+}
+@include xl{
+    @each $propertieName,$propertie in $spacingProperties {
+        @each $spacingName,$spacing in $spacings {
+                    .xl-#{$propertieName}-#{$spacingName}{
+                        #{$propertie}: $spacing;
+                    }
+        }
+    }
+}
+
+
